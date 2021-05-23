@@ -1,0 +1,153 @@
+.section--boards {
+  background-color: #F8FAF9;
+}
+
+.container--boards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60rem;
+}
+
+.slider__item {
+  display: flex;
+  justify-content: space-between;
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include tablets{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider__title {
+  font-weight: 700;
+  color: black;
+  font-size: 2.25rem;
+  margin-top: 3.25rem;
+}
+
+.slider__text {
+  color: #666666;
+  margin-bottom: 1.5rem;
+  width: 70%;
+  @include tablets{
+    margin-bottom: 0.875rem;
+  }
+}
+
+.slider__benefits {
+  display: flex;
+}
+
+.slider__benefits-content {
+  margin-right: 3.25rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.benefits__name {
+  color: #666666;
+}
+
+
+
+.benefits__dscr {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.slider__price-item{
+  display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+
+.price-item__name{
+  font-size: 3.75rem;
+  margin-right: 28px;
+  @include tablets{
+    font-size: 2.75rem;
+  }
+}
+
+
+.boards__img {
+  min-width: 28.125rem;
+  min-height: 28.125rem;
+  @include tablets{
+    max-width: 21rem;
+    max-height: 23rem;
+    min-width: 21rem;
+    min-height: 23rem;
+  }
+}
+
+.gear__btn{
+  display: flex;
+  position: relative;
+  width: 5.75rem;
+  @include tablets{
+    display: none;
+  }
+}
+
+.gear__btn-menu {
+  background-color:gray;
+  padding: 30px;
+  position: absolute;
+  width: 273px;
+  height: 291px;
+  position: absolute;
+  left: 90px;
+  top: 0;
+  border-radius: 4px;
+  display: none;
+}
+
+.gear__btn-list{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.gear__btn-icon{
+  margin-right: 16px;
+}
+
+.gear__btn-name{
+  color: black;
+  font-weight: bold;
+}
+
+.gear__btn-parametr{
+  margin-left: auto;
+}
+
+.btn__link{
+  width: 91px;
+  height: 91px;
+  background-color:#3A587E;
+  border-radius: 4px;
+  position: relative;
+}
+
+.btn__img{
+  position: absolute;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

@@ -210,6 +210,17 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 480px) {
+  .hero__text {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
 
 .hero-title {
   font-size: 3rem;
@@ -612,6 +623,10 @@
   cursor: pointer;
   width: 2.125rem;
   height: 2.1875rem;
+  fill: blanchedalmond;
+}
+.icon__svg:hover {
+  fill: black;
 }
 
 .icon__benefit {
@@ -623,6 +638,202 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.icon__benefit:hover {
+  fill: darkkhaki;
+}
+
+.icon__dscr {
+  fill: black;
+  width: 24px;
+  height: 20px;
+}
+
+.section--boards {
+  background-color: #F8FAF9;
+}
+
+.container--boards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 60rem;
+}
+
+.slider__item {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .slider__item {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .slider__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.slider__title {
+  font-weight: 700;
+  color: black;
+  font-size: 2.25rem;
+  margin-top: 3.25rem;
+}
+
+.slider__text {
+  color: #666666;
+  margin-bottom: 1.5rem;
+  width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .slider__text {
+    margin-bottom: 0.875rem;
+  }
+}
+
+.slider__benefits {
+  display: flex;
+}
+
+.slider__benefits-content {
+  margin-right: 3.25rem;
+}
+.slider__benefits-content:last-child {
+  margin-right: 0;
+}
+
+.benefits__name {
+  color: #666666;
+}
+
+.benefits__dscr {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.slider__price-item {
+  display: flex;
+  margin-top: 1.25rem;
+  align-items: center;
+}
+
+.price-item__name {
+  font-size: 3.75rem;
+  margin-right: 28px;
+}
+@media screen and (max-width: 768px) {
+  .price-item__name {
+    font-size: 2.75rem;
+  }
+}
+
+.boards__img {
+  min-width: 28.125rem;
+  min-height: 28.125rem;
+}
+@media screen and (max-width: 768px) {
+  .boards__img {
+    max-width: 21rem;
+    max-height: 23rem;
+    min-width: 21rem;
+    min-height: 23rem;
+  }
+}
+
+.gear__btn {
+  display: flex;
+  position: relative;
+  width: 5.75rem;
+}
+@media screen and (max-width: 768px) {
+  .gear__btn {
+    display: none;
+  }
+}
+
+.gear__btn-menu {
+  background-color: gray;
+  padding: 30px;
+  position: absolute;
+  width: 273px;
+  height: 291px;
+  position: absolute;
+  left: 90px;
+  top: 0;
+  border-radius: 4px;
+  display: none;
+}
+
+.gear__btn-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.gear__btn-icon {
+  margin-right: 16px;
+}
+
+.gear__btn-name {
+  color: black;
+  font-weight: bold;
+}
+
+.gear__btn-parametr {
+  margin-left: auto;
+}
+
+.btn__link {
+  width: 91px;
+  height: 91px;
+  background-color: #3A587E;
+  border-radius: 4px;
+  position: relative;
+}
+
+.btn__img {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay {
+  display: none;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  text-align: center;
+  font-size: 36px;
+  line-height: 72px;
+  display: none;
+}
+
+.closeBtn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  right: 50px;
+  top: 50px;
+}
 
 html {
   font-size: 16px;
@@ -632,7 +843,7 @@ html {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   html {
     font-size: 14px;
   }

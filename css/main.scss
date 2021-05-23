@@ -18,6 +18,8 @@ $phones:480px;
 @import "./styleform.scss";
 @import "./hamburger.scss";
 @import "./sprite.scss";
+@import "./slider.scss";
+@import "./overlay.scss";
 
 
 
@@ -30,7 +32,7 @@ html{
   @include tablets{
     font-size: $basefontsize - 1px;
   }
-  @include tablets{
+  @include phones{
     font-size: $basefontsize - 2px;
   }
 
