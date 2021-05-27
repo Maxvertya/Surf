@@ -1,0 +1,28 @@
+.btn{
+  background-color: #FEDB3F;
+  border-radius: 6.25rem;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  max-height: 3.75rem;
+  margin-right: 0;
+  padding: 1.25rem 2.5625rem;
+  border: none;
+  margin-right: 0.3125rem;
+  display: inline-block;
+
+  &:hover{
+    background-color: #FFD517;
+    color: black;
+  }
+}
+
+.btn__reset{
+  background-color: transparent;
+  color: white;
+  &:hover{
+    background-color: gray;
+    color:#FEDB3F;
+  }
+}

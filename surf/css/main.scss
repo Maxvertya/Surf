@@ -1,0 +1,120 @@
+$containerwidth:940px;
+$color:black;
+$basefontsize:16px;
+$tablets:768px;
+$phones:480px;
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+/* Подключения */
+@import "./media.scss";
+@import "./wrapper.scss";
+@import "./section.scss";
+@import "./button.scss";
+@import "./header.scss";
+@import "./reviews.scss";
+@import "./description.scss";
+@import "./styleform.scss";
+@import "./hamburger.scss";
+@import "./sprite.scss";
+@import "./slider.scss";
+@import "./overlay.scss";
+@import "./arrow.scss";
+
+
+
+////////// svg
+@import url(./sprite.svg);
+
+
+html{
+  font-size: $basefontsize;
+  @include tablets{
+    font-size: $basefontsize - 1px;
+  }
+  @include phones{
+    font-size: $basefontsize - 2px;
+  }
+
+}
+body{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: normal;
+  line-height: 1.42;
+  padding: 0;
+  margin: 0;
+  color:white;
+
+}
+
+body, html{
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  li{
+    list-style: none;
+  }
+}
+
+table{
+  border-collapse: collapse;
+}
+
+
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+.container{
+  width: 95%;
+  max-width: $containerwidth;
+  margin: 0 auto;
+  height: 100%;
+
+}
+
+.hero__container{
+  @include tablets{
+    width: 100%;
+  }
+}
+
+.section__map{
+  background-color: blanchedalmond;
+}
