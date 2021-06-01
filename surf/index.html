@@ -398,6 +398,52 @@
             </div>
           </li>
         </ul>
+        <ul class="team__list team-version-mobile">
+          <li class="team__item">
+            <div class="team__title">
+              <p>Борис Федорович</p>
+            </div>
+            <div class="team__content">
+              <div class="team__member">
+                <img src="./img/borya.png" alt="" class="team__photo">
+              </div>
+              <div class="team__content-block">Отвечает за материалы и разработку досок</div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__title">
+              <p>Ольга Невзорова</p>
+            </div>
+            <div class="team__content">
+              <div class="team__member">
+                <img src="./img/olya.png" alt="" class="team__photo">
+              </div>
+              <div class="team__content-block">Создает дизайн серфбордов</div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__title">
+              <p>Ингвар Нильсон</p>
+            </div>
+            <div class="team__content">
+              <div class="team__member">
+                <img src="./img/ingvar.png" alt="" class="team__photo">
+              </div>
+              <div class="team__content-block">Участвует в разработке серфбордов</div>
+            </div>
+          </li>
+          <li class="team__item">
+            <div class="team__title">
+              <p>Екатерина Иванова</p>
+            </div>
+            <div class="team__content">
+              <div class="team__member">
+                <img src="./img/katya.png" alt="" class="team__photo">
+              </div>
+              <div class="team__content-block">Отвечает за разработку новых продуктов</div>
+            </div>
+          </li>
+        </ul>
 
       </div>
     </section>
@@ -490,39 +536,40 @@
       <div class="container container__order">
         <h2 class="section__title order__title">Закажите доску</h2>
         <form class="form">
+          <input type="hidden" name="to" value="maksimvertyachkin@gmail.com">
           <div class="form__column">
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Имя</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="name">
               </label>
               <label class="form__block">
-                <div class="form__title">Фамилия</div>
-                <input type="text" class="form__input">
+                <div class="form__title">Телефон</div>
+                <input type="text" class="form__input" name="phone">
               </label>
             </div>
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Улица</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="street">
               </label>
             </div>
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Дом</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="home">
               </label>
               <label class="form__block">
                 <div class="form__title">Корпус</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="building">
               </label>
               <label class="form__block">
                 <div class="form__title">Квартира</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="apartments">
               </label>
               <label class="form__block">
                 <div class="form__title">Этаж</div>
-                <input type="text" class="form__input">
+                <input type="text" class="form__input" name="floor">
               </label>
             </div>
           </div>
@@ -530,7 +577,7 @@
             <div class="form__row">
               <label class="form__block">
                 <div class="form__title">Комментарии</div>
-                <textarea class="form__input form__input--textarea"></textarea>
+                <textarea class="form__input form__input--textarea" name="comment"></textarea>
               </label>
             </div>
             <div class="form__controls">
@@ -560,8 +607,7 @@
         </form>
       </div>
     </section>
-    <section class="section">
-      <div id="map" style="width: 100%; height: 100%"></div>
+    <section class="section section--map" id="map">
 
     </section>
     <nav class="wrapper__menu">

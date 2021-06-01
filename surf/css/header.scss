@@ -178,5 +178,6 @@
 .contacts.contacts__header{
   @include tablets{
     display: none;
+    justify-content: center;
   }
 }
