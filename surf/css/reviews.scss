@@ -11,13 +11,33 @@
   padding: 3.125rem 2.8125rem 2.125rem;
 }
 
-.reviews__display-inner{
+.reviews__list{
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews__item{
   display: flex;
+  position: absolute;
+  top:  0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 1.3s;
   @include tablets{
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
+}
+
+
+.reviews__item.active{
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+  transition: 1.3s;
 }
 
 .reviews__avatar{
@@ -76,9 +96,10 @@
   border-color: transparent;
   position: relative;
 
-  &--active{
-    border-color: yellow;
-  }
+}
+
+.active{
+  border-color: yellow;
 }
 
 .interactive__avatar-link{

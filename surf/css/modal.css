@@ -1,0 +1,24 @@
+.modal {
+  display: none;
+  min-width: 20rem;
+  text-align: center;
+}
+
+.modal__container {
+  min-width: 20rem;
+  margin: auto;
+}
+
+.error__modal {
+  display: none;
+  min-width: 20rem;
+  text-align: center;
+  color: red;
+}
+
+.modal-error {
+  display: none;
+  color: #CA1B36;
+  text-align: center;
+  font-weight: 700;
+}

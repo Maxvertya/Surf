@@ -299,15 +299,34 @@
   padding: 3.125rem 2.8125rem 2.125rem;
 }
 
-.reviews__display-inner {
+.reviews__list {
+  position: relative;
+  min-height: 280px;
+}
+
+.reviews__item {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: 1.3s;
 }
 @media screen and (max-width: 768px) {
-  .reviews__display-inner {
+  .reviews__item {
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
+}
+
+.reviews__item.active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
+  transition: 1.3s;
 }
 
 .reviews__avatar {
@@ -370,7 +389,8 @@
   border-color: transparent;
   position: relative;
 }
-.interactive__avatar--active {
+
+.active {
   border-color: yellow;
 }
 
@@ -878,6 +898,101 @@
 
 .left-arrow {
   left: 70px;
+}
+
+.container__team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__item {
+  margin-right: 20px;
+  position: relative;
+  text-align: center;
+  max-width: 13.75rem;
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+
+.team__item .active {
+  text-align: center;
+}
+
+.team__title {
+  text-align: center;
+  margin-top: 21px;
+  font-size: 21px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+.team__title::after {
+  content: url(../img/Polygon1.png);
+  position: absolute;
+  top: -0.0625rem;
+  right: 0.6875rem;
+}
+
+.team-version-desktop .team__content {
+  position: absolute;
+  top: 100%;
+}
+
+.team__content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+
+.team__content-block {
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.team__item-active .team__title {
+  position: relative;
+}
+
+.team__item-active .team__title::after {
+  content: url(../img/top1.png);
+  position: absolute;
+}
+
+.team__item-active .team__content {
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team__item-active .team__content-block {
+  text-align: center;
+}
+
+.modal {
+  display: none;
+  text-align: center;
+}
+
+.modal__container {
+  width: 309px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffff;
+  padding: 37px 68px;
+}
+
+.modal__content {
+  font-weight: bold;
+  margin-bottom: 18px;
 }
 
 html {
