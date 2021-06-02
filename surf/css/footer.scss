@@ -1,0 +1,65 @@
+.section--map {
+  position: relative;
+}
+
+
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  z-index: 10;
+}
+
+.footer__textblock {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 4.8rem;
+  align-items: center;
+  padding: 18px 0px;
+}
+
+.socials{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer__adress{
+  font-size: 1.3125rem;
+
+}
+
+.footer__container {
+  @include tablets {
+    max-width: 46.25rem;
+    margin: auto;
+  }
+
+  @include phones{
+    max-width: 25rem;
+    margin: auto;
+    padding: 0 .4rem;
+  }
+}
+
+.contacts__footer-phone{
+  font-size: 1.3125rem;
+}
+
+.contacts__footer-phone::before{
+  content: url(../img/phoneffoter.png);
+  margin-right: 0.3125rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+}

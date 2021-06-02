@@ -50,10 +50,10 @@ $('.form').submit(e => {
 
     request.done(data =>{
       content.text(data.message);
-        $.fancybox.open({
+        $.fancybox.open();/* {
           src: "#modal",
           type: "inline"
-        });
+        }); */
 
     });
 

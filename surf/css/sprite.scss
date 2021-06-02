@@ -3,10 +3,7 @@
   width: 2.125rem;
   height: 2.1875rem;
   fill: blanchedalmond;
-  &:hover{
-    fill: black;
-    
-  }
+
 }
 
 .icon__benefit{
@@ -17,15 +14,23 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  &:hover{
-    fill: darkkhaki;
-  }
 
 
 }
 
 .icon__dscr{
   fill: black;
-  width: 24px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.25rem;
+}
+
+.icon__socials{
+  fill: #B3B3B3;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: 14px;
+
+  &:hover{
+    fill: black;
+  }
 }
