@@ -1,4 +1,4 @@
-const measureWidth = (item) => {
+const measureWidth = item => {
   let reqWidthItem = 0;
   const screenWidth = $(window).width();
   const container = item.closest(".accordion__list");
@@ -30,7 +30,7 @@ const closeEveryItemInContainer = (container) =>{
 
 
 
-const openItem = item => {
+const openItems = item => {
   const hiddenContent = item.find(".accordion__item-content");
   const reqWidth = measureWidth(item);
   const textBlock = item.find(".accordion__item-container");
@@ -55,7 +55,7 @@ $(".accordion__item-title").on('click', e=> {
     closeEveryItemInContainer(container)
   } else{
     closeEveryItemInContainer(container)
-    openItem(item);
+    openItems(item);
   }
 
 });
