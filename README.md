@@ -6,4 +6,4 @@
 4) JQuery
 5) SASS
 
-[Ссылка на сайт](https://maxvertya.github.io/surf1/surf/index.html)
+[Ссылка на сайт](https://maxvertya.github.io/Surf/surf/index.html)
